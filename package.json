@@ -1,30 +1,33 @@
 {
-    "name": "kevoree-comp-instancemonitor",
-    "version": "1.0.0",
-    "description": "Monitor the current model and send a signal if the number of matching instance fall below a defined limit.",
-    "main": "./lib/InstanceMonitor.js",
-    "kevoree": {
-        "package": "org.kevoree.library"
-    },
-    "scripts": {
-        "prepublish": "grunt",
-        "postpublish": "grunt publish"
-    },
-    "keywords": [
-        "kevoree-std-lib",
-        "kevoree",
-        "library",
-        "comp"
-    ],
-    "dependencies": {
-        "kevoree-entities": "^8.0.0"
-    },
-    "devDependencies": {
-        "grunt": "^0.4.1",
-        "grunt-kevoree": "^5.0.0",
-        "grunt-kevoree-genmodel" : "^2.0.0",
-        "grunt-kevoree-registry" : "^2.0.0"
-    },
-    "license": "MIT",
-    "author": "Manuel Leduc"
+  "name": "kevoree-comp-instancemonitor",
+  "version": "1.0.0",
+  "description": "Monitor the current model and send a signal if the number of matching instance fall below a defined limit.",
+  "main": "./lib/InstanceMonitor.js",
+  "kevoree": {
+    "package": "org.kevoree.library"
+  },
+  "scripts": {
+    "prepublish": "grunt",
+    "postpublish": "grunt publish"
+  },
+  "keywords": [
+    "kevoree-std-lib",
+    "kevoree",
+    "library",
+    "comp"
+  ],
+  "dependencies": {
+    "async": "^1.5.2",
+    "kevoree-entities": "^8.0.0",
+    "kevoree-kotlin": "^1.0.3",
+    "kevoree-library": "^5.0.9"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.1",
+    "grunt-kevoree": "^5.0.0",
+    "grunt-kevoree-genmodel": "^2.0.0",
+    "grunt-kevoree-registry": "^2.0.0"
+  },
+  "license": "MIT",
+  "author": "Manuel Leduc"
 }

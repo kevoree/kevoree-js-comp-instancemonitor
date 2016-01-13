@@ -1,6 +1,6 @@
 {
-    "class": "root:org.kevoree.ContainerRoot@0.34007308096624911452696631766",
-    "generated_KMF_ID": "0.34007308096624911452696631766",
+    "class": "root:org.kevoree.ContainerRoot@0.77797105256468061452700088026",
+    "generated_KMF_ID": "0.77797105256468061452700088026",
     "nodes": [],
     "repositories": [],
     "hubs": [],
@@ -31,17 +31,37 @@
                                     "superTypes": [],
                                     "dictionaryType": [
                                         {
-                                            "class": "org.kevoree.DictionaryType@0.92530512204393741452696631786",
-                                            "generated_KMF_ID": "0.92530512204393741452696631786",
+                                            "class": "org.kevoree.DictionaryType@0.49155215593054891452700088129",
+                                            "generated_KMF_ID": "0.49155215593054891452700088129",
                                             "attributes": [
                                                 {
-                                                    "class": "org.kevoree.DictionaryAttribute@yourAttrName",
+                                                    "class": "org.kevoree.DictionaryAttribute@limit",
                                                     "fragmentDependant": "false",
                                                     "optional": "false",
-                                                    "name": "yourAttrName",
+                                                    "name": "limit",
                                                     "state": "false",
                                                     "datatype": "STRING",
-                                                    "defaultValue": "aDefaultValue",
+                                                    "defaultValue": "",
+                                                    "genericTypes": []
+                                                },
+                                                {
+                                                    "class": "org.kevoree.DictionaryAttribute@value",
+                                                    "fragmentDependant": "false",
+                                                    "optional": "false",
+                                                    "name": "value",
+                                                    "state": "false",
+                                                    "datatype": "STRING",
+                                                    "defaultValue": "",
+                                                    "genericTypes": []
+                                                },
+                                                {
+                                                    "class": "org.kevoree.DictionaryAttribute@key",
+                                                    "fragmentDependant": "false",
+                                                    "optional": "false",
+                                                    "name": "key",
+                                                    "state": "false",
+                                                    "datatype": "STRING",
+                                                    "defaultValue": "",
                                                     "genericTypes": []
                                                 }
                                             ]
@@ -54,8 +74,26 @@
                                             "value": "Monitor the current model and send a signal if the number of matching instance fall below a defined limit."
                                         }
                                     ],
-                                    "required": [],
-                                    "provided": []
+                                    "required": [
+                                        {
+                                            "class": "org.kevoree.PortTypeRef@signal",
+                                            "noDependency": "true",
+                                            "optional": "true",
+                                            "name": "signal",
+                                            "ref": [],
+                                            "mappings": []
+                                        }
+                                    ],
+                                    "provided": [
+                                        {
+                                            "class": "org.kevoree.PortTypeRef@trigger",
+                                            "noDependency": "true",
+                                            "optional": "true",
+                                            "name": "trigger",
+                                            "ref": [],
+                                            "mappings": []
+                                        }
+                                    ]
                                 }
                             ],
                             "deployUnits": [
